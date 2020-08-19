@@ -1,0 +1,62 @@
+{% extends "layout.njk"%}
+{% block head %}
+    <title>Rocketseat - Cursos</title>
+    <link href="/modal.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="conteudos">
+
+        <div class="curso" id="starter">
+            <span>01</span>
+            <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="logo_starter">
+            <p>
+                <strong>Torne-se um programador desejado
+                </strong>no mercado de trabalho com esse curso gratuito</p>
+            <div class="info">
+                <p>8 módulos</p>
+                <p class="preco">Gratuito</p>
+            </div>
+        </div>
+
+        <div class="curso" id="launchbase">
+            <span>02</span>
+            <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="logo_lauchbase">
+            <p>
+                <strong>Domine a programação do zero
+                </strong>e tenha as melhores oportunidades do mercado</p>
+            <div class="info">
+                <p>17 módulos</p>
+                <p class="preco">Pago</p>
+            </div>
+        </div>
+
+        <div class="curso" id="gostack">
+            <span>03</span>
+            <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="logo_gostack">
+            <p>
+                <strong>Treinamento imersivo
+                </strong>nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+            <div class="info">
+                <p>25 módulos</p>
+                <p class="preco">Pago</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close_modal">
+                <span class="material-icons">
+                    close
+                </span>
+            </a>
+            <div class="modal_content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+
+    </div>
+    <script src="/scripts.js"></script>
+{% endblock %}
